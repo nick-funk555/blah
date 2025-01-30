@@ -1,3 +1,5 @@
+# Configuring the Qemu-guest-agent
+## Installing tools
 on Debian/Ubuntu based systems (with apt-get) run:
 
 ```apt-get install qemu-guest-agent```
@@ -13,13 +15,14 @@ on SUSE Linux (with zypper):
 ```zypper install qemu-guest-agent```
 
 
+## Enabling the guest tools
 
-Depending on the distribution, the guest agent might not start automatically after the installation.
+The guest agent might not start automatically after the installation.
 
-Start it either directly with
+Start the service
 
 ```systemctl start qemu-guest-agent```
 
-Then enable the service to autostart (permanently) if not auto started, with
+Enable the service to autostart permanently
 
 ```systemctl enable qemu-guest-agent```
